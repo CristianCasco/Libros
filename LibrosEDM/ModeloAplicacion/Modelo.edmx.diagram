@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="92347ce2be1340ea939dbf05a65b8966" Name="Diagram1" >
+        <EntityTypeShape EntityType="Modelo.Libros" Width="1.5" PointX="3" PointY="0.5" />
+        <EntityTypeShape EntityType="Modelo.Editorial" Width="1.5" PointX="5.25" PointY="0.5" />
+        <AssociationConnector Association="Modelo.EditorialLibros" />
+        <EntityTypeShape EntityType="Modelo.Materia" Width="1.5" PointX="0.5" PointY="0.5" />
+        <AssociationConnector Association="Modelo.MateriaLibros" />
+        <EntityTypeShape EntityType="Modelo.Autor" Width="1.5" PointX="5.25" PointY="5.375" />
+        <EntityTypeShape EntityType="Modelo.DetalleAutor" Width="1.5" PointX="5.25" PointY="2.75" />
+        <AssociationConnector Association="Modelo.LibrosDetalleAutor" />
+        <AssociationConnector Association="Modelo.AutorDetalleAutor" />
+        <EntityTypeShape EntityType="Modelo.Idioma" Width="1.5" PointX="0.5" PointY="2.625" />
+        <EntityTypeShape EntityType="Modelo.CopiaLibro" Width="1.5" PointX="3" PointY="4.875" />
+        <AssociationConnector Association="Modelo.IdiomaLibros" />
+        <AssociationConnector Association="Modelo.LibrosCopiaLibro" />
+        <EntityTypeShape EntityType="Modelo.Cliente" Width="1.5" PointX="7.625" PointY="0.5" />
+        <EntityTypeShape EntityType="Modelo.TipoCliente" Width="1.5" PointX="7.625" PointY="3" />
+        <EntityTypeShape EntityType="Modelo.AlquilerLibro" Width="1.5" PointX="7.625" PointY="5.375" />
+        <AssociationConnector Association="Modelo.ClienteAlquilerLibro" />
+        <AssociationConnector Association="Modelo.TipoClienteCliente" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
